@@ -70,7 +70,7 @@ aside {
 // Navigation
 
 .navbar-default {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
@@ -99,7 +99,7 @@ aside {
             &.active {
                 > a,
                 > a:focus {
-                    color: $theme-primary !important;
+                    color: $theme-primary !important; //changes color of nav item if you're on the page
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -109,38 +109,38 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: transparent;
+        background-color: white; //this used to be transparent
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba(rgb(49, 27, 27), .7); //this used to be white and is color for home nav name
             &:hover,
             &:focus {
-                color: white;
+                color: rgb(30, 19, 19); //this is the hover transition color for home nav name
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba(rgb(49, 27, 27), .7); //this is text color for list nav items
             &:hover {
-                color: white;
+                color: rgb(30, 19, 19); //this used to be white, and is hover transition color for list nav items
             }
         }
         &.affix {
-            background-color: white;
+            background-color: rgb(255, 255, 255); //this is background color of nav bar when scrolling down
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
                 font-size: 14px;
                 &:hover,
                 &:focus {
-                    color: darken($theme-primary, 10%);
+                    color: darken($theme-primary, 10%); //TBD on what this does
                 }
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: $theme-dark;
+                color: $theme-dark; //this used to be $theme-dark and controls nav item text color when scrolling down
                 &:hover {
-                    color: $theme-primary;
+                    color: $theme-primary; //this used to be $theme-primary and controls nav item text color when hovering over item
                 }
             }
         }
