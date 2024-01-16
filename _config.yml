@@ -1,6 +1,8 @@
 # Site settings
 title: Fulton Memories
-email: howard.sung.kim@gmail.com
+author:
+  name: Howard Kim
+  email: howard@fultonmemories.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/fulton" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
