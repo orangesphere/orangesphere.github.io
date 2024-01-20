@@ -389,8 +389,13 @@ li span {
   }
 
 .sized-image {
-    width: 250px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
+    width: 600px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+  }
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
   }
 
 @media (min-width: 500px) {
@@ -424,3 +429,14 @@ li span {
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
+
+.standard-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+.column {
+    width: 30%; /* Adjust the width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+  }
